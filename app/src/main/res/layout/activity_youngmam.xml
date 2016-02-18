@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoungmamActivity"
+    android:background="@color/color_basic_bg">
+
+    <RelativeLayout android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+
+        <FrameLayout android:id="@+id/left_layout"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible">
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/right_layout"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/action_bar_bg_selector">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_search"/>
+        </FrameLayout>
+
+        <!--
+        <RelativeLayout android:id="@+id/right_layout"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/action_bar_bg_selector"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView android:id="@+id/message_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/btn_message"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/message_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4.5dp"
+                    android:paddingRight="4.5dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_toRightOf="@+id/message_image"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_alignParentTop="true"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/red_tip_circle"
+                    android:visibility="gone"
+                    app:font="fzlthk"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/young_logo"/>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/main_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/main_tab_bg">
+
+        <LinearLayout android:id="@+id/select_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/id_select_cn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:drawableTop="@drawable/main_select"
+                android:drawablePadding="3dp"
+                android:text="@string/str_select_cn"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_tab_text"
+                app:font="fzltxihk"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/find_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/id_follow_cn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:drawableTop="@drawable/main_follow"
+                android:drawablePadding="3dp"
+                android:text="@string/str_follow_cn"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_tab_text"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/main_edit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/main_camera"
+            android:background="@android:color/transparent"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout android:id="@+id/category_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:duplicateParentState="true"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/id_message_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:drawableTop="@drawable/main_message"
+                    android:drawablePadding="3dp"
+                    android:text="@string/str_message_cn"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_tab_text"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notify_indicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/category_layout"
+                android:layout_alignTop="@+id/category_layout"
+                android:background="@drawable/red_dot" />
+
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/mine_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/id_mine_cn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:drawableTop="@drawable/main_mine"
+                android:drawablePadding="3dp"
+                android:text="@string/str_mine_cn"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_tab_text"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.xiaobukuaipao.youngmam.widget.HorizontalDisableViewPager android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/main_bottom_tab">
+
+    </com.xiaobukuaipao.youngmam.widget.HorizontalDisableViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout android:id="@+id/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xiaobukuaipao.youngmam.widget.AutoScrollViewPager
+            android:id="@+id/activity_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/guide_dots_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <FrameLayout android:id="@+id/question_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@color/foreground_shade"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_question"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dp"
+                    android:text="@string/str_question_answer"
+                    android:textColor="@color/color_ff6c00"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:font="fzlthk"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout android:id="@+id/welfare_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@color/foreground_shade"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_welfare"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dp"
+                    android:text="@string/str_welfare"
+                    android:textColor="@color/color_ff1744"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:font="fzlthk"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/hot_topic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_hot_topic"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_hot_topic"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_select_topic"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+        <LinearLayout android:id="@+id/more_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_more"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/select_more"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedListView
+        android:id="@+id/hot_topic_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:divider="@color/color_e8e8e8"
+        android:layout_marginTop="10dp">
+
+    </com.xiaobukuaipao.youngmam.view.NestedListView>
+
+    <RelativeLayout android:id="@+id/hot_subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_hot_subject"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_hot_subject"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_hot_subject"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+        <LinearLayout android:id="@+id/more_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_more"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/select_more"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedGridView
+        android:id="@+id/hot_theme_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="2">
+
+    </com.xiaobukuaipao.youngmam.view.NestedGridView>
+
+    <RelativeLayout android:id="@+id/new_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_new_question"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_new_question"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_new_question"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+        <LinearLayout android:id="@+id/more_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_more"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/select_more"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedListView
+        android:id="@+id/new_question_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:divider="@color/color_e8e8e8"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </com.xiaobukuaipao.youngmam.view.NestedListView>
+
+    <RelativeLayout android:id="@+id/huayoung_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_huayoung_select"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_huayoung_select"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_huayoung_select"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

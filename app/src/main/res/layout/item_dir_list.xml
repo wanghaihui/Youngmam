@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/label_item_bg">
+
+    <com.xiaobukuaipao.youngmam.view.SquaredImageView
+        android:id="@+id/image_item"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_item"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/dir_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/black"
+            app:font="fzltxihk"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/image_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font="fzltxihk"/>
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_setting_more"/>
+</RelativeLayout>

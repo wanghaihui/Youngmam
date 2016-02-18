@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaobukuaipao.youngmam.calendar.TextViewWithCircularIndicator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/year_label_height"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="@dimen/text_size_16sp"
+    android:textColor="@color/date_picker_year_selector">
+</com.xiaobukuaipao.youngmam.calendar.TextViewWithCircularIndicator>

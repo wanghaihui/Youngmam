@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/emoji_tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_b7b7b7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout android:id="@+id/emoji_tab_keyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".14"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/emoji_keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/emoji_keyboard"
+                    android:background="@drawable/emoji_tab_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/emoji_tab_expression"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".36"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/emoji_expression"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/emoji_expression"
+                    android:background="@drawable/emoji_tab_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/emoji_tab_yantext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".36"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/emoji_yantext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/emoji_yantext"
+                    android:background="@drawable/emoji_tab_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/emoji_tab_backspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".14"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/emoji_backspace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/emoji_backspace"
+                    android:background="@drawable/emoji_tab_bg"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/emoji_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f3f3f3"
+        android:layout_above="@+id/emoji_tab" />
+
+</RelativeLayout>

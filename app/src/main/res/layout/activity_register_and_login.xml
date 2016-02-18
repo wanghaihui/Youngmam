@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ff4c51">
+
+    <ImageView android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fairy_bg"/>
+
+    <ImageButton android:id="@+id/back_login_btn"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/btn_login_back"
+        android:background="@android:color/transparent"/>
+    
+    <RelativeLayout android:id="@+id/third_party_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp">
+
+        <RelativeLayout android:id="@+id/tip_third_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/third_login_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_third_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/third_login_text_view"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/third_login_text_view"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/tip_third_login">
+
+            <ImageButton
+                android:id="@+id/btn_wechat"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/wechat"
+                android:background="@drawable/third_party_bg"/>
+
+            <ImageButton
+                android:id="@+id/btn_qq"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"
+                android:src="@mipmap/qq"
+                android:background="@drawable/third_party_bg"/>
+
+            <ImageButton
+                android:id="@+id/btn_weibo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:src="@mipmap/weibo"
+                android:background="@drawable/third_party_bg"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/third_party_layout"
+        android:layout_marginBottom="15dp">
+
+        <ImageButton android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/btn_login_unpress"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+        <ImageButton android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/btn_register_unpress"
+            android:visibility="gone"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        >
+
+        <ImageView android:id="@+id/longin_young"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/login_young_logo"/>
+
+        <LinearLayout android:id="@+id/indicator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longin_young"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/login_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:enabled="false"
+                    android:text="@string/str_login"
+                    android:textColor="@color/login_register_text"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@drawable/indicator_btn_bg"
+                    app:font="fzltxihk"/>
+
+                <ImageView android:id="@+id/login_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/girl"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/register_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:enabled="true"
+                    android:text="@string/str_register"
+                    android:textColor="@color/login_register_text"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@drawable/indicator_btn_bg"
+                    app:font="fzltxihk"/>
+
+                <ImageView android:id="@+id/register_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/girl"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout android:id="@+id/edit_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_below="@+id/indicator_layout">
+
+            <LinearLayout android:id="@+id/login_edit_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle_white_radius5_bg"
+                android:visibility="visible">
+
+                <com.xiaobukuaipao.youngmam.form.FormEditText
+                    xmlns:editTextForm="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/login_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_phone"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:inputType="phone"
+                    editTextForm:testType="phone"
+                    app:font="fzltxihk"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_e8e8e8" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/forget_pswd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:text="@string/str_forget_pswd"
+                        android:textColor="@color/color_ff4c51"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:background="@color/label_item_bg"
+                        app:font="fzltxihk"/>
+
+                    <com.xiaobukuaipao.youngmam.form.FormEditText
+                        xmlns:editTextForm="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/login_pswd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/forget_pswd"
+                        android:hint="@string/str_password"
+                        android:padding="15dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/text_size_14sp"
+                        editTextForm:testType="alphaNumeric"
+                        app:font="fzltxihk"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/register_edit_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle_white_radius5_bg"
+                android:visibility="gone">
+
+
+                <com.xiaobukuaipao.youngmam.form.FormEditText
+                    xmlns:editTextForm="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/register_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_phone"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    editTextForm:testType="phone"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_e8e8e8" />
+
+                <com.xiaobukuaipao.youngmam.form.FormEditText
+                    xmlns:editTextForm="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/register_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_password"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    editTextForm:testType="alphaNumeric"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_e8e8e8" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/get_verify_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:text="@string/str_get_verify_code"
+                        android:textColor="@color/color_ff4c51"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:background="@color/label_item_bg"
+                        app:font="fzltxihk"/>
+
+                    <com.xiaobukuaipao.youngmam.form.FormEditText
+                        xmlns:editTextForm="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/verify_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_verify_code"
+                        android:layout_toLeftOf="@+id/get_verify_code"
+                        android:padding="15dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_14sp"
+                        editTextForm:testType="numeric"
+                        app:font="fzltxihk"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

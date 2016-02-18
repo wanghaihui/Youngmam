@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_more_info"
+            android:textColor="@color/color_505050"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/more_info"
+            android:layout_marginRight="10dp"
+            android:background="@color/color_505050"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/more_info"
+            android:layout_marginLeft="10dp"
+            android:background="@color/color_505050"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView android:id="@+id/img_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/special_card_price"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_price"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/per_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_14sp"
+                app:font="fzltxihk"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_e8e8e8"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/addr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView android:id="@+id/img_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/special_card_address"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_addr"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_505050"
+                android:textSize="@dimen/text_size_14sp"
+                app:font="fzltxihk"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_e8e8e8"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/special_card_phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_phone"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_505050"
+                android:textSize="@dimen/text_size_14sp"
+                app:font="fzltxihk"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_e8e8e8"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView android:id="@+id/img_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/special_card_time"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_time"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_505050"
+                android:textSize="@dimen/text_size_14sp"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

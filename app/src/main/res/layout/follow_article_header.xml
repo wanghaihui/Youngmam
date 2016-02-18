@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/follow_headview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/recommend_expert_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_recommend_expert"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_recommend_expert"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_recommend_expert"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+        <LinearLayout android:id="@+id/more_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_more"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/select_more"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedListView
+        android:id="@+id/recommend_expert_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="10dp"
+        android:divider="@color/color_e8e8e8"
+        android:layout_marginTop="10dp">
+
+    </com.xiaobukuaipao.youngmam.view.NestedListView>
+
+</LinearLayout>

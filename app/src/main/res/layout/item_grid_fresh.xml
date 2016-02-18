@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@color/foreground_shade">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.xiaobukuaipao.youngmam.view.RoundedImageView
+                        xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/avatar"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        roundImage:riv_border_color="@color/white"
+                        roundImage:riv_border_width="1dp"
+                        roundImage:riv_corner_radius="10dp"
+                        roundImage:riv_mutate_background="true"
+                        roundImage:riv_oval="true" />
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/avatar"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_ff4c51"
+                        app:font="fzltxihk"/>
+
+                    <ImageView android:id="@+id/geek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/name"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/default_geek"/>
+
+                </RelativeLayout>
+
+                <com.xiaobukuaipao.youngmam.view.SquaredImageView android:id="@+id/img_fresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.xiaobukuaipao.youngmam.view.DrawableCenterTextView android:id="@+id/like"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/btn_like"
+                        android:text="@string/str_like_num"
+                        android:textSize="@dimen/text_size_12sp"
+                        app:font="fzltxihk"
+                        android:background="@color/label_item_bg"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/color_e8e8e8" />
+
+                    <com.xiaobukuaipao.youngmam.view.DrawableCenterTextView android:id="@+id/comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/btn_comment"
+                        android:text="@string/str_comment_num"
+                        android:textSize="@dimen/text_size_12sp"
+                        app:font="fzltxihk"
+                        android:background="@color/label_item_bg"/>
+                </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

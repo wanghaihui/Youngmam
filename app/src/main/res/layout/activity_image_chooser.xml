@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <GridView android:id="@+id/chooser_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_e8e8e8"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:verticalSpacing="2dp">
+    </GridView>
+
+    <RelativeLayout android:id="@+id/chooser_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_7f000000"
+        android:visibility="gone">
+
+        <TextView android:id="@+id/select_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

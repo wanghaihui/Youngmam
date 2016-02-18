@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_basic_bg">
+
+    <com.xiaobukuaipao.youngmam.view.RoundedImageView
+        xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        roundImage:riv_border_color="@color/white"
+        roundImage:riv_border_width="0dp"
+        roundImage:riv_corner_radius="2dp"
+        roundImage:riv_mutate_background="true"
+        roundImage:riv_oval="true" />
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_505050"
+        android:textSize="@dimen/text_size_14sp"
+        android:singleLine="true"
+        app:font="fzltxihk"/>
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_ff4c51"
+        android:textSize="@dimen/text_size_12sp"
+        android:singleLine="true"
+        app:font="fzltxihk"/>
+
+</LinearLayout>

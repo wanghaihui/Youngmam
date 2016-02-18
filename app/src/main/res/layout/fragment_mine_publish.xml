@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e8e8e8">
+
+    <com.xiaobukuaipao.youngmam.loadmore.LoadMoreGridViewContainer
+        android:id="@+id/grid_load_more_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.xiaobukuaipao.youngmam.loadmore.GridViewWithHeaderAndFooter android:id="@+id/publish_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:numColumns="2"/>
+
+    </com.xiaobukuaipao.youngmam.loadmore.LoadMoreGridViewContainer>
+
+    <RelativeLayout android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView android:id="@+id/honey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/honey"
+            android:layout_centerInParent="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/honey"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_empty_publish"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

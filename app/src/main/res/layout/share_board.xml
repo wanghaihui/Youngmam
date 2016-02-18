@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:background="@color/white" >
+
+    <LinearLayout android:id="@+id/boxin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout android:id="@+id/weibo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:background="@color/label_item_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/umeng_socialize_sina_on"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/umeng_socialize_text_sina_key"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout android:id="@+id/wechat"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:background="@color/label_item_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/umeng_socialize_wechat"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/umeng_socialize_text_weixin_key"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout android:id="@+id/wechat_circle"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:background="@color/label_item_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/umeng_socialize_wxcircle"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/umeng_socialize_text_weixin_circle_key"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout android:id="@+id/qq"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:background="@color/label_item_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/umeng_socialize_qq_on"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/umeng_socialize_text_qq_key"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

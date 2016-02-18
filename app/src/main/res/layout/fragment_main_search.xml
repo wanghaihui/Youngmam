@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_basic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/color_ff4c51">
+
+        <RelativeLayout android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle_white_radius5_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/general_search"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/str_search_wanted"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_a1a1a1"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.xiaobukuaipao.youngmam.widget.ObservableScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/str_hot_tag"
+                android:textColor="@color/color_ff4c51"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.view.NestedGridView
+                android:id="@+id/tag_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="3"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_hot_subject"
+                    android:textColor="@color/color_ff4c51"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:font="fzltxihk"/>
+
+                <LinearLayout android:id="@+id/more_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/explore_more"
+                        android:textColor="@color/color_select_more"
+                        app:font="fzltxihk"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/select_more"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.xiaobukuaipao.youngmam.view.NestedListView
+                android:id="@+id/hot_theme_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:dividerHeight="1px"
+                android:divider="@color/color_efefef"/>
+
+        </LinearLayout>
+
+    </com.xiaobukuaipao.youngmam.widget.ObservableScrollView>
+
+</LinearLayout>

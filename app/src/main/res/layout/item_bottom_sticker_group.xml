@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="96dp"
+    android:layout_height="45dp"
+    android:background="@color/black">
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_white_bcolor_selector"
+        android:textSize="@dimen/text_size_14sp"
+        android:drawablePadding="5dp"
+        android:drawableBottom="@drawable/sticker_group_indicator"
+        app:font="fzltxihk"/>
+
+</RelativeLayout>

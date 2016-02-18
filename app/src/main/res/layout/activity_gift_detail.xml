@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e8e8e8">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/action_bar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+            <FrameLayout android:id="@+id/pager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.xiaobukuaipao.youngmam.widget.ContentHeightViewPager android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </com.xiaobukuaipao.youngmam.widget.ContentHeightViewPager>
+
+                <LinearLayout
+                    android:id="@+id/guide_dots_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/gift_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/gift_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/gift_credit"
+                        android:drawablePadding="5dp"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/color_ff4c51"
+                        app:font="fzltxihk"/>
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/gift_privilege"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/gift_price"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/gift_privilege_tip"
+                        android:drawablePadding="5dp"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/color_b2b2b2"
+                        app:font="fzltxihk"/>
+
+                </RelativeLayout>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/gift_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_009944"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/gift_detail"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_ff4c51"
+                    android:text="@string/str_gift_introduce"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/gift_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:textColor="@color/color_505050"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/color_505050"
+                    android:text="@string/str_declare_phone"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/color_505050"
+                    android:text="@string/str_declare_weixin"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weixin"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/color_505050"
+                    android:text="@string/str_declare_huayongmam"
+                    app:font="fzltxihk"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+
+        <com.xiaobukuaipao.youngmam.font.FontButton android:id="@+id/btn_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_want_to_exchange"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            android:background="@drawable/btn_participate_bg"
+            app:font="fzltxihk"/>
+    </RelativeLayout>
+
+</RelativeLayout>

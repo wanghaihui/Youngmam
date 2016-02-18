@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout android:id="@+id/drawing_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.xiaobukuaipao.youngmam.gpuimage.GPUImageView android:id="@+id/gpuimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <com.xiaobukuaipao.youngmam.gpuimage.GPUImageView android:id="@+id/large_gpuimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gpuimage"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/classic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <RelativeLayout android:id="@+id/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <com.xiaobukuaipao.youngmam.hlistview.HListView
+                android:id="@+id/filter_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:overScrollMode="never"
+                app:hlv_dividerWidth="5dp"
+                android:background="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/watermark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <com.xiaobukuaipao.youngmam.hlistview.HListView
+                android:id="@+id/watermark_group_view"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:scrollbars="none"/>
+
+            <com.xiaobukuaipao.youngmam.hlistview.HListView
+                android:id="@+id/watermark_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:hlv_dividerWidth="5dp"
+                android:scrollbars="none"
+                android:layout_above="@+id/watermark_group_view" />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/sticker_layout"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <com.xiaobukuaipao.youngmam.hlistview.HListView
+                android:id="@+id/sticker_group_view"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:scrollbars="none"/>
+
+            <com.xiaobukuaipao.youngmam.hlistview.HListView
+                android:id="@+id/sticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:scrollbars="none"
+                app:hlv_dividerWidth="5dp"
+                android:layout_above="@+id/sticker_group_view" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/btn_area"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/color_2c2c2c">
+
+        <ImageButton android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14"
+            android:src="@mipmap/back_normal"
+            android:background="@drawable/btn_process_bg"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/btn_watermark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_watermark"
+            android:textColor="@color/color_white_bcolor_selector"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk" />
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/btn_sticker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_sticker"
+            android:textColor="@color/color_white_bcolor_selector"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk" />
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_filter"
+            android:textColor="@color/color_white_bcolor_selector"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk" />
+
+        <ImageButton android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14"
+            android:src="@mipmap/next_normal"
+            android:background="@drawable/btn_participate_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <LinearLayout android:id="@+id/reply_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include android:id="@+id/reply"
+            layout="@layout/reply_layout" />
+
+        <LinearLayout android:id="@+id/footer_for_reply"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout android:id="@+id/id_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer
+        android:id="@+id/load_more_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/reply_bottom_layout">
+
+        <ListView
+            android:id="@+id/comment_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:dividerHeight="1px"
+            android:divider="@color/color_e8e8e8"
+            android:scrollbars="none"
+            android:transcriptMode="normal">
+        </ListView>
+
+    </com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer>
+
+</RelativeLayout>

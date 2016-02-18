@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/guide_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guide_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ccffffff">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="@string/str_guide_three"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/color_ff4c51"
+            app:font="fzltxihk" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical">
+
+        <ImageView android:id="@+id/img_top_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/guide_three_top_logo" />
+
+        <com.xiaobukuaipao.youngmam.view.GuideThreeImageView
+            android:id="@+id/img_middle_photo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_below="@+id/img_top_logo"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/guide_three_middle_photo1"/>
+
+        <com.xiaobukuaipao.youngmam.view.SquaredImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_middle_photo1"
+            android:src="@mipmap/guide_three_middle_photo"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

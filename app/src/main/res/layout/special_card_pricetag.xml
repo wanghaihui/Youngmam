@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp">
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_ff4c51"
+        android:textSize="@dimen/text_size_16sp"
+        app:font="fzlthk"/>
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/btnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawableLeft="@mipmap/price_tag"
+        android:drawablePadding="5dp"
+        android:text="@string/str_price_tag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:background="@drawable/guide_immediate_start"
+        app:font="fzlthk" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_basic_bg">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar" />
+
+    <LinearLayout android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@mipmap/main_tab_bg">
+
+        <com.xiaobukuaipao.youngmam.view.DrawableCenterTextView android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_comment"
+            android:text="@string/str_answer"
+            app:font="fzltxihk"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:background="@color/label_item_bg"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_e8e8e8" />
+
+        <com.xiaobukuaipao.youngmam.view.DrawableCenterTextView android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_share"
+            android:text="@string/str_share"
+            app:font="fzltxihk"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:background="@color/label_item_bg"/>
+    </LinearLayout>
+
+    <com.xiaobukuaipao.youngmam.widget.YoungRefreshLayout
+        xmlns:refresh="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/bottom_layout"
+        refresh:scrollableChildId="@+id/comment_list_view">
+
+        <com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer
+            android:id="@+id/load_more_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/comment_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:dividerHeight="1px"
+                android:divider="@color/color_e8e8e8"
+                android:scrollbars="none"
+                android:transcriptMode="normal">
+            </ListView>
+
+        </com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer>
+
+    </com.xiaobukuaipao.youngmam.widget.YoungRefreshLayout>
+
+    <LinearLayout android:id="@+id/reply_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include android:id="@+id/reply"
+            layout="@layout/reply_layout" />
+
+        <LinearLayout android:id="@+id/footer_for_reply"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout android:id="@+id/id_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

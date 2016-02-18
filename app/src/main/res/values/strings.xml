@@ -1,0 +1,412 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">花样妈妈</string>
+    <string name="app_cn_name">花样妈妈</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="str_save">保存</string>
+
+    <string name="youngmam_all_image">所有图片</string>
+
+    <!-- Guide -->
+    <string name="start_immediate">立 即 开 启</string>
+
+    <!-- Bottom Navi Bar -->
+    <string name="str_select_cn">精选</string>
+    <string name="str_follow_cn">关注</string>
+    <string name="str_message_cn">消息</string>
+    <string name="str_mine_cn">我的</string>
+
+    <!-- select精选页 -->
+    <string name="str_geek_recommended">达人推荐</string>
+    <string name="str_select_topic">精选专题</string>
+    <string name="str_select_theme">精选话题</string>
+    <string name="str_carefully_chosen_recommand">精选推荐</string>
+    <string name="str_top_recommend_no_more">刷到底啦~点击\"热门\"浏览更多内容</string>
+    <string name="explore_more">MORE</string>
+
+    <!-- fresh 新鲜事 -->
+    <!-- %n$ms：代表输出的是字符串，n代表是第几个参数，设置m的值可以在输出之前放置空格 -->
+    <string name="str_like_num">喜欢</string>
+    <string name="str_comment_num">评论</string>
+    <string name="str_share">分享</string>
+    <string name="str_delete">删除</string>
+    <string name="str_answer_num">回答</string>
+
+    <!-- 最新活动页 -->
+    <string name="str_latest_activity">最新活动</string>
+    <string name="str_want_to_participate">我要参加</string>
+    <string name="str_activity_label_selected">标签已经选择了哦~</string>
+
+    <!-- 热门专题 -->
+    <string name="str_explore_all_topic">查看所有专题</string>
+
+    <!-- 所有专题 -->
+    <string name="str_all_topic">专题列表</string>
+
+    <!-- 发现页 -->
+    <string name="str_find_fresh">发现新鲜</string>
+
+    <!-- 详情页 -->
+    <string name="str_fresh_detail">详情</string>
+
+    <!-- 分类页 -->
+
+    <!-- 详情页 -->
+    <string name="str_fresh_like_num"><xliff:g id="tips">%1$s</xliff:g>个人喜欢</string>
+    <string name="str_fresh_comment_num"><xliff:g id="tips">%1$s</xliff:g>条评论</string>
+    <string name="str_reply">回复</string>
+    <string name="str_send">发送</string>
+
+    <!-- 登录页 -->
+    <string name="str_third_login">第三方快速登录</string>
+    <string name="str_login">登录</string>
+    <string name="str_register">注册</string>
+    <string name="str_phone">手机号</string>
+    <string name="str_password">密码</string>
+    <string name="str_forget_pswd">忘记密码?</string>
+    <string name="str_verify_code">验证码</string>
+    <string name="str_get_verify_code">获取验证码</string>
+
+    <!-- 重置密码 -->
+    <string name="str_reset_password">重置密码</string>
+
+    <!-- 注册页 -->
+    <string name="str_mam_basic_info">完善基本信息</string>
+    <string name="str_nickname">昵称</string>
+    <string name="str_select_mam_state">选择亲子状态</string>
+    <string name="str_prepare">备孕中</string>
+    <string name="str_gravida">准妈妈</string>
+    <string name="str_hava_baby">家有小宝</string>
+    <string name="str_select_baby_gender">请选择宝宝性别</string>
+    <string name="str_boy">男孩</string>
+    <string name="str_girl">女孩</string>
+    <string name="str_select_birth">请选择出生日期</string>
+    <string name="str_birthday">生日</string>
+    <string name="str_upload_avatar_error">请先上传头像</string>
+    <string name="str_nickname_error">请填写昵称</string>
+
+    <!-- Mine页 -->
+    <string name="str_goto_publish">这里一片荒芜, 快去发布吧~</string>
+    <string name="str_wait_publish">这里一片荒芜, 等待发布吧~</string>
+    <string name="str_goto_like">这里一片荒芜, 快去喜欢吧~</string>
+    <string name="str_goto_comment">这里一片荒芜, 快去评论吧~</string>
+    <string name="str_goto_notify">这里一片荒芜, 等待通知吧~</string>
+    <string name="str_goto_login">这里一片荒芜, 赶快登录吧~</string>
+    <string name="str_no_like">没有喜欢的文章~</string>
+    <string name="str_no_comment">没有喜欢的评论~</string>
+    <string name="str_mine_home">个人中心</string>
+    <string name="str_publish">发布(<xliff:g id="tips">%1$s</xliff:g>)</string>
+    <string name="str_like">喜欢(<xliff:g id="tips">%1$s</xliff:g>)</string>
+    <string name="str_comment">评论(<xliff:g id="tips">%1$s</xliff:g>)</string>
+    <string name="str_notify">通知</string>
+    <string name="str_publish_theme">发布</string>
+
+    <!-- 设置页 -->
+    <string name="str_setting">设置</string>
+    <string name="str_system_notify">推送通知</string>
+    <string name="str_clear_cache">清除缓存</string>
+    <string name="str_version">版本</string>
+    <string name="str_star">评价应用</string>
+    <string name="str_feedback">反馈与建议</string>
+    <string name="str_contact">联系电话</string>
+    <string name="str_about_us">关于我们</string>
+    <string name="str_logout">退出当前帐号</string>
+
+    <!-- 个人设置页 -->
+    <string name="str_avatar">头像</string>
+    <string name="str_state">亲子状态</string>
+
+    <!-- 所有照片 -->
+    <string name="str_all_images">所有照片</string>
+    <string name="str_next">下一步</string>
+    <string name="reached_max_size">您最多可选择9张图片</string>
+    <string name="str_at_least_one_pic">至少选择一张图片</string>
+
+    <!-- 发布页 -->
+    <string name="str_publish_topic">发布</string>
+    <string name="str_complete">完成</string>
+    <string name="str_async_to">同步到</string>
+    <string name="str_qzone">QQ空间</string>
+    <string name="str_weibo">新浪微博</string>
+    <string name="str_publish_tip">在这里输入您想要说的话吧~</string>
+    <string name="str_publish_label_tip">选择或创建标签吧~</string>
+    <string name="str_select_label">请先选择合适的标签</string>
+    <string name="str_at_least_select_image">请至少选择一张照片</string>
+    <string name="str_please_have_question">请先完善自己的问题哦~</string>
+    <string name="publish_article">发布文章</string>
+    <string name="str_abandon_this_publish">放弃此次发布?</string>
+    <string name="str_abandon">放弃</string>
+    <string name="str_edit_photo">图片编辑</string>
+    <string name="str_abandon_this_edit">放弃此次编辑?</string>
+
+    <!-- 添加书签 -->
+    <string name="str_label_added">添加书签</string>
+    <string name="str_ok">确定</string>
+    <string name="str_add">添加</string>
+    <string name="str_label_search_tip">#搜索或创建专属标签#</string>
+    <string name="str_personal_label_tip">我的专属标签</string>
+    <string name="str_hot_label_tip">热门标签推荐</string>
+
+    <!-- 搜索页 -->
+    <string name="str_cancel">取消</string>
+    <string name="str_latest_search">最近搜索</string>
+    <string name="str_hot_search">热门搜索</string>
+
+    <!-- 日历 -->
+    <string name="item_is_selected">%1$s 被选中</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+
+    <!-- 下拉刷新 -->
+    <string name="ptr_pull_down_to_refresh">下拉刷新</string>
+    <string name="ptr_pull_down">下拉刷新</string>
+    <string name="ptr_refreshing">刷新中...</string>
+    <string name="ptr_release_to_refresh">释放刷新</string>
+    <string name="ptr_refresh_complete">刷新完成</string>
+
+    <!-- FormEditText -->
+    <string name="error_field_must_not_be_empty">此项不能为空</string>
+    <string name="error_only_standard_letters_are_allowed">只有标准字母被支持</string>
+    <string name="error_only_numeric_digits_allowed">只有数字被支持</string>
+    <string name="error_this_field_cannot_contain_special_character">此项不能包含特别的字符</string>
+    <string name="error_only_numeric_digits_range_allowed">数字的范围是:%1$s - %2$s</string>
+    <string name="error_email_address_not_valid">邮件地址不合法</string>
+    <string name="error_phone_not_valid">电话号码不合法</string>
+    <string name="error_url_not_valid">网址不合法</string>
+    <string name="error_date_not_valid">格式不合法</string>
+
+    <!-- 网络请求模块 -->
+    <string name="request_failure">网络请求失败</string>
+
+    <!-- 加载框 -->
+    <string name="loading">正在加载...</string>
+    <string name="loading_failure">加载失败</string>
+    <string name="uploading">正在上传...</string>
+    <string name="uploading_success">上传成功</string>
+    <string name="uploading_failure">上传失败</string>
+    <string name="logining">正在登录...</string>
+    <string name="reseting">正在重置...</string>
+    <string name="publishing">正在发布...</string>
+    <string name="setting">正在设置...</string>
+
+    <!-- 图片裁剪 -->
+    <string name="crop_pick_error">图片选择失败</string>
+    <string name="crop_saving">正在保存图片…</string>
+    <string name="crop_wait">请稍等…</string>
+
+    <!-- 加载更多 -->
+    <string name="cube_views_load_more_loading">正在加载...</string>
+    <string name="cube_views_load_more_loaded_empty">没有更多...</string>
+    <string name="cube_views_load_more_loaded_no_more">数据全部加载完毕</string>
+    <string name="cube_views_load_more_click_to_load_more">点击加载更多</string>
+    <string name="cube_views_load_more_error">加载失败,点击重试</string>
+
+    <!-- 活动 -->
+    <string name="default_activity_participate">已有0人参与</string>
+    <string name="activity_participate">已有<xliff:g id="tips">%1$s</xliff:g>人参与</string>
+
+    <string name="float_num">共<xliff:g id="tips">%1$s</xliff:g>条内容</string>
+
+    <!-- Dialog -->
+    <string name="mine_publish">我的发布</string>
+    <string name="is_delete_article">是否删除这篇文章?</string>
+    <string name="comment">评论</string>
+    <string name="is_delete_comment">是否删除这条评论?</string>
+    <string name="is_delete_this_picture">是否删除这张图片?</string>
+    <string name="this_article_deleted">此文章已经被删除</string>
+    <string name="this_question_deleted">此问题已经被删除</string>
+    <string name="is_delete_question">是否删除这个提问?</string>
+
+    <!-- 喜欢文章的人列表页 -->
+    <string name="str_article_like_num"><xliff:g id="tips">%1$s</xliff:g>人喜欢</string>
+
+    <!-- 时间间隔 -->
+    <string name="time_interval_five_mins">刚刚</string>
+    <string name="time_interval_today">HH:mm</string>
+    <string name="time_interval_yesterday">昨天 HH:mm</string>
+    <string name="time_interval_one_more_day">前天 HH:mm</string>
+    <string name="time_interval_one_week">EEEE</string>
+    <string name="time_interval_out_one_week">yyyy-MM-dd</string>
+
+    <!-- 搜索 -->
+    <string name="str_search">搜索</string>
+    <string name="str_search_wanted">搜索想要的</string>
+    <string name="str_clear_search_history">清空搜索记录</string>
+
+    <!-- 联系电话 -->
+    <string name="str_contact_phone">010-59435740</string>
+
+    <!-- 设置页 -->
+    <string name="str_feedback_tip">花样妈妈期待您的意见哦~</string>
+    <string name="str_feedback_contact">电话号码/QQ/微信</string>
+    <string name="str_contact_tip">填写正确的联系方式,能收到意想不到的惊喜哦~</string>
+
+    <!-- 修改信息 -->
+    <string name="modify_name_tip">好的昵称可以让朋友容易记住你哦~</string>
+
+    <string name="str_not_login">未登录,请点击头像登录</string>
+
+    <string name="retry_send_num">重新获取(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="retry_send">重新获取</string>
+
+    <!-- 登录框提示 -->
+    <string name="mine_basic_info">个人主页</string>
+    <string name="please_login_first">请先登录哦~</string>
+
+    <!-- 搜索结果为空 -->
+    <string name="str_search_no_data">什么也没找到~~呜呜呜</string>
+
+    <!-- 分享标题 -->
+    <string name="str_share_title_article">花样妈妈上的这组照片真的很赞, 快去看看吧~</string>
+    <string name="str_share_title_question">花样妈妈上的这个问题觉得很不错, 快去看看吧~</string>
+    <string name="str_share_title_publish_article">在花样妈妈上发布了一篇有趣的帖子</string>
+    <string name="str_share_title_activity">在花样妈妈上发现了一个有趣的活动</string>
+    <string name="str_share_title_topic">在花样妈妈上发现了一个有趣的专题</string>
+    <string name="str_share_title_theme_begin">妈妈们正在讨论</string>
+    <string name="str_share_title_theme_end">的内容, 速去围观~</string>
+    <string name="str_share_gift">在花样妈妈发现了一件有趣的礼品</string>
+    <string name="str_share_invite_register">快来一起玩花样妈妈，注册有惊喜</string>
+
+    <!-- 礼品商城 -->
+    <string name="str_gift_center">礼品商城</string>
+    <string name="str_gift_on_market">正在火爆进行中!</string>
+    <string name="str_gift_off_market">已经结束啦~</string>
+    <string name="str_gift_privilege_all_user">全部用户都可参与</string>
+    <string name="str_gift_privilege_expert">达人用户专享</string>
+    <string name="str_want_to_exchange">立即兑换</string>
+    <string name="str_gift_count">剩余<xliff:g id="number">%1$d</xliff:g>件</string>
+    <string name="str_gift_introduce">商品介绍</string>
+    <string name="str_declare_phone">联系电话: 010-59435740 (工作日9:30-18:00)</string>
+    <string name="str_declare_weixin">微信公众号: huayangma</string>
+    <string name="str_declare_huayongmam">所有奖品和活动由花样妈妈提供</string>
+
+    <!-- 话题 -->
+    <string name="str_all_theme">话题列表</string>
+
+    <!-- 达人 -->
+    <string name="str_expert_hall">达人列表</string>
+
+    <!-- 热门 -->
+    <string name="str_hot">热门</string>
+    <string name="str_new">最新</string>
+
+    <string name="str_hot_tag">热门标签</string>
+    <string name="str_hot_subject">热门话题</string>
+    <string name="str_new_question">最新问题</string>
+
+    <string name="str_mine_credit">我的积分</string>
+    <string name="str_mine_gift">我的礼品</string>
+    <string name="str_gift_address">收件地址</string>
+
+    <string name="str_recipient">收件人</string>
+    <string name="str_recipient_name">请填写真实姓名</string>
+    <string name="str_contactinfomation">联系方式</string>
+    <string name="str_input_phone">请填写您的手机号码</string>
+    <string name="str_receive_address">收货地址</string>
+    <string name="str_input_address">请填写您的详细地址</string>
+
+    <string name="str_total_credit">总积分</string>
+    <string name="str_today_credit">今日积分</string>
+
+    <string name="str_evalute_app">评价应用</string>
+    <string name="str_invite_friends">邀请好友(有惊喜哦~)</string>
+    <string name="str_publish_content">发布内容</string>
+    <string name="str_send_comment">发表评论</string>
+    <string name="str_like_content">喜欢内容</string>
+    <string name="str_share_content">分享内容</string>
+    <string name="str_publish_invalide_content">发布违规内容</string>
+    <string name="str_send_invalide_comment">发表违规评论</string>
+
+    <string name="str_price_tag">查看详情</string>
+    <string name="str_more_info">更多信息</string>
+    <string name="str_per_price">人均</string>
+
+    <string name="str_business_detail">商品详情</string>
+
+    <string name="str_mine_gift_cost">花费积分: <xliff:g id="number">%1$d</xliff:g></string>
+
+    <string name="str_expand_detail">展开详情</string>
+    <string name="str_back_detail">收起详情</string>
+
+    <string name="str_dialog_credit">积分+<xliff:g id="number">%1$d</xliff:g></string>
+
+    <string name="str_credit_rule">积分细则</string>
+
+    <string name="str_notify_gift">礼品到碗里来啦!</string>
+    <string name="str_invalid_tip">这条通知不存在了哦~</string>
+
+    <string name="str_activity_award">活动获奖</string>
+
+    <string name="str_addr_not_confirmed">地址未确认,点击重试</string>
+    <string name="str_mine_gift_canceled">已过期</string>
+
+    <string name="str_show_your_friends">跟你的朋友们炫耀一下吧~</string>
+    <string name="str_invite_register_content">花样妈妈就是妈妈的生活消费指南，你想要的惊喜都在这里</string>
+
+    <string name="str_check_in">签到</string>
+
+    <string name="str_credit">积分</string>
+
+    <string name="str_invalid_tag">这条标签不存在了哦~</string>
+    <string name="str_iamatag">我是一个标签~~</string>
+
+    <string name="str_sharing">分享中...</string>
+
+    <string name="str_collect_tips">点击此处可收藏</string>
+
+    <string name="str_filter">滤镜</string>
+    <string name="str_watermark">水印</string>
+    <string name="str_sticker">贴纸</string>
+
+    <string name="str_empty_publish">这里空荡荡的耶~</string>
+    <string name="str_message">消息</string>
+    <string name="message_new_friend">新朋友</string>
+    <string name="message_comment">评论</string>
+    <string name="message_like">喜欢</string>
+    <string name="message_notify">系统通知</string>
+
+    <string name="str_question_answer">问答区</string>
+    <string name="str_welfare">福利社</string>
+
+    <string name="str_select_questions">精选问答</string>
+
+    <string name="str_have_a_question">提问请戳这里~</string>
+    <string name="str_answer">回答</string>
+    <string name="str_answer_count">回答(<xliff:g id="tips">%1$s</xliff:g>)</string>
+
+    <string name="str_colon">:</string>
+
+    <string name="str_ask">提问</string>
+    <string name="str_ask_question">提问请戳这里</string>
+    <string name="str_huayoung_select">花样精选</string>
+
+    <string name="str_follow">关注</string>
+    <string name="str_huafen">花粉</string>
+    <string name="str_find">发现</string>
+
+    <string name="str_recommend_expert">达人推荐</string>
+
+    <string name="add_follow">加关注</string>
+    <string name="has_followed">已关注</string>
+
+    <string name="please_waiting">请稍候...</string>
+
+    <string name="str_all_read">全部已读</string>
+    <string name="str_new_friends">新朋友</string>
+
+    <string name="str_system_message">系统通知</string>
+    <string name="str_huayoung_system_message">花样妈妈官方通知</string>
+
+    <string name="str_more_than_three">不能多于3个哦~</string>
+
+    <string name="str_splash_huayoung">花样生活  精致妈妈</string>
+
+    <string name="str_guide_one">留住孩子最美好的瞬间</string>
+    <string name="str_guide_one_desc">今天是宝宝一岁生日, 希望她以后的每一天都快快乐乐~</string>
+    <string name="str_guide_three">一大波福利正在靠近</string>
+    <string name="str_guide_two">不懂就问做满分妈妈</string>
+    <string name="str_mengbaozhuanjia">萌宝专家</string>
+</resources>

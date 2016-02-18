@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic color -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="color_ccffffff">#CCFFFFFF</color>
+
+    <color name="color_55black">#55000000</color>
+    <color name="color_4cblack">#4C000000</color>
+
+    <color name="cc_black">#CC000000</color>
+
+    <color name="color_33_black">#33000000</color>
+    <color name="color_00_black">#00000000</color>
+
+    <!-- 底部导航字体颜色 -->
+    <color name="color_505050">#FF505050</color>
+    <color name="color_ff4c51">#FFFF4C51</color>
+
+    <!-- 本应用的所有页面的背景色 -->
+    <color name="color_basic_bg">#FFE8E8E8</color>
+
+    <!-- 顶部ActionBar -->
+    <color name="color_action_bar">#FFFF4C51</color>
+
+    <!-- select精选页 -->
+    <color name="color_ffdbdc">#FFFFDBDC</color>
+    <color name="color_727272">#FF727272</color>
+    <color name="color_afafaf">#FFAFAFAF</color>
+
+    <!-- 活动页 -->
+    <color name="color_ef343a">#FFEF343A</color>
+
+    <!-- 分类页 -->
+    <color name="color_ececec">#FFECECEC</color>
+
+    <!-- 详情页 -->
+    <color name="color_7c7c7c">#FF7C7C7C</color>
+    <color name="color_e5e5e5">#FFE5E5E5</color>
+    
+    <!-- 个人喜欢列表页 -->
+    <color name="color_e8e8e8">#FFE8E8E8</color>
+    <color name="color_efefef">#FFEFEFEF</color>
+
+    <!-- Mine页 -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- 登录页 -->
+    <color name="color_4c920004">#4C920004</color>
+
+    <!-- 注册页 -->
+    <color name="color_ffcc00">#FFFFCC00</color>
+    
+    <!-- 图片选择页 -->
+    <color name="color_7f000000">#7F000000</color>
+
+    <!-- 标签页 -->
+    <color name="color_bdbdbd">#BDBDBD</color>
+    <color name="color_a1a1a1">#A1A1A1</color>
+
+    <color name="color_f5f5f5">#F5F5F5</color>
+    <color name="color_b2b2b2">#B2B2B2</color>
+    <color name="color_54af74">#54AF74</color>
+    <color name="color_009944">#009944</color>
+    <color name="color_828282">#828282</color>
+
+    <color name="color_d2d2d2">#D2D2D2</color>
+
+    <color name="color_ffd801">#FFD801</color>
+
+    <color name="color_ffcd48">#FFCD48</color>
+    <color name="color_ffb900">#FFB900</color>
+
+    <color name="trans_light">#99EAEAEA</color>
+    <color name="black2">#FF666666</color>
+
+    <color name="color_d9d9d9">#FFD9D9D9</color>
+
+    <color name="color_b7b7b7">#FFB7B7B7</color>
+
+    <color name="color_f3f3f3">#FFF3F3F3</color>
+
+    <color name="color_2c2c2c">#FF2C2C2C</color>
+    <color name="color_882c2c2c">#882C2C2C</color>
+
+    <color name="color_bbbaba">#FFBBBABA</color>
+
+    <color name="color_ff6c00">#FFFF6C00</color>
+    <color name="color_ff1744">#FFFF1744</color>
+
+    <color name="color_ff3c81">#FFFF3C81</color>
+    <color name="color_ffb400">#FFFFB400</color>
+    <color name="color_ff5b45">#FFFF5B45</color>
+    <color name="color_6dcdc2">#FF6DCDC2</color>
+    <color name="color_ff8a00">#FFFF8A00</color>
+
+    <color name="color_fd5b60">#FFFD5B60</color>
+
+    <color name="color_cdcdcd">#FFCDCDCD</color>
+
+    <color name="color_ffde00">#FFFFDE00</color>
+
+</resources>

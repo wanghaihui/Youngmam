@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <com.xiaobukuaipao.youngmam.widget.JazzyViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.xiaobukuaipao.youngmam.widget.JazzyViewPager>
+
+        <include android:id="@+id/photopager_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/title_bar">
+
+        </include>
+
+        <include android:id="@+id/photopager_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/bottom_bar">
+
+        </include>
+
+    </RelativeLayout>
+
+</LinearLayout>

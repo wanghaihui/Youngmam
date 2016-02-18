@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout android:id="@+id/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xiaobukuaipao.youngmam.widget.AutoScrollViewPager
+            android:id="@+id/activity_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/guide_dots_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedGridView
+        android:id="@+id/questions_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/img_hot_topic"
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_indicator"
+            android:layout_centerVertical="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_hot_topic"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_select_questions"
+            android:textColor="@color/color_ff4c51"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk"/>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.view.NestedListView
+        android:id="@+id/selected_question_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:divider="@color/color_e8e8e8"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

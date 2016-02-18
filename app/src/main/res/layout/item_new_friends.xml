@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/member_item_bg">
+
+    <com.xiaobukuaipao.youngmam.view.RoundedImageView
+        xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        roundImage:riv_border_color="@color/white"
+        roundImage:riv_border_width="1dp"
+        roundImage:riv_corner_radius="10dp"
+        roundImage:riv_mutate_background="true"
+        roundImage:riv_oval="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_ff4c51"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_505050"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dp"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/color_505050"
+            app:font="fzltxihk"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

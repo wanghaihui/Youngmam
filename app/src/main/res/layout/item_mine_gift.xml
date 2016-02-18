@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.xiaobukuaipao.youngmam.view.CreditImageView
+        android:id="@+id/image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/color_505050"
+            app:font="fzltxihk"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/gift_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_14sp"
+            app:font="fzltxihk"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/expand_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/color_efefef"
+        android:visibility="visible">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/mine_gift_expand"
+            android:text="@string/str_expand_detail"
+            android:textColor="@color/color_505050"
+            android:textSize="@dimen/text_size_12sp"
+            app:font="fzltxihk"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/gift_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/text_size_13sp"
+                android:textColor="@color/color_505050"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/gift_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_size_13sp"
+                android:textColor="@color/color_505050"
+                app:font="fzltxihk"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/gift_detail"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/color_ff4c51"
+                android:text="@string/str_gift_introduce"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/gift_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_15sp"
+                android:textColor="@color/color_505050"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+
+        <RelativeLayout android:id="@+id/back_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/mine_gift_back"
+                android:text="@string/str_back_detail"
+                android:textColor="@color/color_505050"
+                android:textSize="@dimen/text_size_12sp"
+                app:font="fzltxihk"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

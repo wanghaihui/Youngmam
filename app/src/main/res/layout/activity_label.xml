@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e8e8e8">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/add_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_add"
+            android:textColor="@color/label_added_color"
+            android:textSize="@dimen/text_size_14sp"
+            android:clickable="true"
+            android:background="@drawable/btn_add_label_unclick"
+            app:font="fzltxihk"/>
+
+        <com.xiaobukuaipao.youngmam.widget.SearchView android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_label_search_tip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/add_label"
+            android:textSize="@dimen/text_size_14sp"
+            android:background="@drawable/rectangle_white_radius5_bg"
+            app:font="fzltxihk"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout android:id="@+id/personal_hot_label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical" >
+
+            <LinearLayout android:id="@+id/personal_label_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/personal_label"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_personal_label_tip"
+                    android:textColor="@color/color_ff4c51"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+            </LinearLayout>
+            
+            <com.xiaobukuaipao.youngmam.widget.LabelListView
+                xmlns:label="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/personal_label_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                label:horizontalSpacing="10dp"
+                label:orientation="horizontal"
+                label:verticalSpacing="10dp">
+
+            </com.xiaobukuaipao.youngmam.widget.LabelListView>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/hot_label"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_hot_label_tip"
+                    android:textColor="@color/color_ff4c51"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:font="fzltxihk"/>
+            </LinearLayout>
+
+            <com.xiaobukuaipao.youngmam.widget.LabelListView
+                xmlns:label="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/hot_label_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                label:horizontalSpacing="10dp"
+                label:orientation="horizontal"
+                label:verticalSpacing="10dp">
+            </com.xiaobukuaipao.youngmam.widget.LabelListView>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/search_label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ListView android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1px"
+                android:divider="@color/color_e8e8e8">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

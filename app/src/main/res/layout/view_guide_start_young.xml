@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/guide_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guide_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ccffffff">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/color_ff4c51"
+            app:font="fzltxihk" />
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.font.FontButton
+        android:id="@+id/start_huayoung_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/guide_immediate_start"
+        android:focusable="true"
+        android:text="@string/start_immediate"
+        android:textColor="@color/white"
+        app:font="fzltxihk"/>
+
+    <com.xiaobukuaipao.youngmam.view.SquaredImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/start_huayoung_btn"
+        android:src="@mipmap/guide_four_middle_photo"/>
+
+</RelativeLayout>

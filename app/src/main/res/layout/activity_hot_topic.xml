@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_basic_bg">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <ListView android:id="@+id/hot_topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:background="@color/color_basic_bg"
+        android:layout_below="@+id/action_bar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    </ListView>
+
+</RelativeLayout>

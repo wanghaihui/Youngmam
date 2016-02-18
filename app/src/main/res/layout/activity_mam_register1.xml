@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ff4c51">
+
+    <ImageView android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fairy_bg"/>
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@android:color/transparent">
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/action_bar">
+
+        <FrameLayout android:id="@+id/avatar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.xiaobukuaipao.youngmam.view.RoundedImageView
+                xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/avatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/mam_default_avatar"
+                roundImage:riv_border_color="@color/white"
+                roundImage:riv_border_width="1dp"
+                roundImage:riv_corner_radius="10dp"
+                roundImage:riv_mutate_background="true"
+                roundImage:riv_oval="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar_camera"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="2dp"/>
+        </FrameLayout>
+
+        <com.xiaobukuaipao.youngmam.font.FontEditText android:id="@+id/nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/avatar_layout"
+            android:hint="@string/str_nickname"
+            android:textSize="@dimen/text_size_14sp"
+            android:padding="15dp"
+            android:background="@drawable/rectangle_white_radius5_bg"
+            app:font="fzltxihk"/>
+
+        <RelativeLayout android:id="@+id/mam_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nick_name"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="16dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/select_mam_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_select_mam_state"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/select_mam_state"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/select_mam_state"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/mam_state_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mam_state"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="16dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/prepare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_prepare"
+                android:textColor="@color/register_text"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/btn_mam_register_bg"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/pregnant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_gravida"
+                android:textColor="@color/register_text"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/btn_mam_register_bg"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/child"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_hava_baby"
+                android:textColor="@color/register_text"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/btn_mam_register_bg"
+                app:font="fzltxihk"/>
+
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mam_state_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/btn_register_unpress"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

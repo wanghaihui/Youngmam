@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 基本信息 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_white_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.xiaobukuaipao.youngmam.view.RoundedImageView
+                xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/avatar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                roundImage:riv_border_color="@color/white"
+                roundImage:riv_border_width="1dp"
+                roundImage:riv_corner_radius="10dp"
+                roundImage:riv_mutate_background="true"
+                roundImage:riv_oval="true" />
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_follow_lr"
+                android:paddingRight="@dimen/padding_follow_lr"
+                android:paddingTop="@dimen/padding_follow_tb"
+                android:paddingBottom="@dimen/padding_follow_tb"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/follow_left_drawable"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/follow_background"
+                app:font="fzltxihk" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_ff4c51"
+                        app:font="fzltxihk"/>
+
+                    <ImageView android:id="@+id/geek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/default_geek"/>
+                </RelativeLayout>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:textColor="@color/color_7c7c7c"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.1"
+            android:textSize="@dimen/text_size_14sp"
+            app:font="fzltxihk"/>
+
+        <RelativeLayout android:id="@+id/label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView android:id="@+id/red_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/red_label"/>
+
+            <com.xiaobukuaipao.youngmam.widget.LabelListView2
+                xmlns:label="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/article_label_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/red_label"
+                android:layout_marginLeft="10dp"
+                label:horizontalSpacing="20dp"
+                label:orientation="horizontal"
+                label:verticalSpacing="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/like_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_white_bg">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_fresh_like_num"
+            app:font="fzltxihk"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/like_members"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="36dp"
+                android:scrollbars="none" />
+
+            <ImageButton android:id="@+id/more"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_more"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/rectangle_white_bg"
+        android:orientation="vertical">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/str_fresh_comment_num"
+            app:font="fzltxihk"/>
+
+    </LinearLayout>
+
+</LinearLayout>

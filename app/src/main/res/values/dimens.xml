@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 通用字体大小 -->
+    <dimen name="text_size_10sp">10.0sp</dimen>
+    <dimen name="text_size_12sp">12.0sp</dimen>
+    <dimen name="text_size_13sp">13.0sp</dimen>
+    <dimen name="text_size_14sp">14.0sp</dimen>
+    <dimen name="text_size_15sp">15.0sp</dimen>
+    <dimen name="text_size_16sp">16.0sp</dimen>
+    <dimen name="text_size_18sp">18.0sp</dimen>
+    <dimen name="text_size_20sp">20.0sp</dimen>
+    <dimen name="text_size_22sp">22.0sp</dimen>
+    <dimen name="text_size_24sp">24.0sp</dimen>
+    <dimen name="text_size_26sp">26.0sp</dimen>
+    <dimen name="text_size_28sp">28.0sp</dimen>
+
+    <!-- ActionBar高度 -->
+    <dimen name="action_bar_height">54dp</dimen>
+    <dimen name="action_bar_right_width">64dp</dimen>
+    <dimen name="action_bar_right_padding">15dp</dimen>
+
+    <!-- 活动高度 -->
+    <dimen name="top_activity_height">180dp</dimen>
+
+    <!-- Mine页 -->
+    <!--
+    <dimen name="min_header_height">144dp</dimen>
+    <dimen name="header_height">192dp</dimen>
+    -->
+    <dimen name="min_header_height">180dp</dimen>
+    <dimen name="header_height">228dp</dimen>
+
+    <!-- 日历 -->
+    <dimen name="month_select_circle_radius">45dp</dimen>
+    <dimen name="date_picker_view_height">300dp</dimen>
+    <dimen name="year_label_width">48dp</dimen>
+    <dimen name="year_label_height">64dp</dimen>
+    <dimen name="month_list_item_header_height">48dp</dimen>
+    <dimen name="day_number_select_circle_radius">16dp</dimen>
+
+    <!-- 活动页 -->
+    <dimen name="activity_participate_paddingLeft">10dp</dimen>
+    <dimen name="activity_participate_paddingTop">3dp</dimen>
+    <dimen name="activity_basic_margin_7dp">7dp</dimen>
+    <dimen name="activity_basic_margin_10dp">10dp</dimen>
+    <dimen name="activity_basic_margin_15dp">15dp</dimen>
+    <dimen name="activity_basic_margin_20dp">20dp</dimen>
+    <dimen name="activity_basic_margin_25dp">25dp</dimen>
+    <dimen name="activity_basic_margin_5dp">5dp</dimen>
+    <dimen name="activity_basic_margin_2dp">2dp</dimen>
+    <dimen name="activity_basic_margin_0dp">0dp</dimen>
+
+    <dimen name="activity_basic_margin_reverse_10dp">-10dp</dimen>
+
+    <!-- 红点 -->
+    <dimen name="red_dot_size">8dp</dimen>
+
+    <!-- Footer View -->
+    <dimen name="footer_view_height">48dp</dimen>
+
+    <dimen name="poster_marker_width">48dp</dimen>
+
+    <!-- 软键盘的高度 -->
+    <dimen name="keyboard_height">250dp</dimen>
+
+    <dimen name="padding_follow_lr">8dp</dimen>
+    <dimen name="padding_follow_tb">5dp</dimen>
+
+    <dimen name="guide_bottom_height">132dp</dimen>
+
+</resources>

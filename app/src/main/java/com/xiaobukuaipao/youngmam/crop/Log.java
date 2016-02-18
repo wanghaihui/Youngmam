@@ -1,0 +1,16 @@
+package com.xiaobukuaipao.youngmam.crop;
+
+/**
+ * Created by xiaobu1 on 15-5-13.
+ */
+class Log {
+    private static final String TAG = "android-crop";
+
+    public static void e(String msg) {
+        android.util.Log.e(TAG, msg);
+    }
+
+    public static void e(String msg, Throwable e) {
+        android.util.Log.e(TAG, msg, e);
+    }
+}

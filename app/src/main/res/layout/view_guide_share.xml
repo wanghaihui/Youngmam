@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/guide_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guide_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ccffffff">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="@string/str_guide_two"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/color_ff4c51"
+            app:font="fzltxihk" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView android:id="@+id/img_top_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/guide_two_top_logo" />
+
+        <LinearLayout android:id="@+id/middle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_top_logo"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="7dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.xiaobukuaipao.youngmam.view.RoundedImageView
+                xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/avatar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/guide_two_avatar"
+                roundImage:riv_border_color="@color/white"
+                roundImage:riv_border_width="1dp"
+                roundImage:riv_corner_radius="10dp"
+                roundImage:riv_mutate_background="true"
+                roundImage:riv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_mengbaozhuanjia"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/color_ff4c51"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/default_geek"
+                        app:font="fzltxihk"/>
+
+                    <com.xiaobukuaipao.youngmam.font.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="258"
+                        android:textColor="@color/color_cdcdcd"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@mipmap/like_comment_pressed"
+                        app:font="fzltxihk"/>
+
+
+                </RelativeLayout>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1.每天2次, 早晚各一次"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_505050"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2.用头小柄大的婴儿软毛牙刷"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_505050"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3.两岁前用不含氟牙膏或清水"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_505050"
+                    app:font="fzltxihk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4.轻轻地以上下刷的方式清洁"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_505050"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/middle_layout"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/shadow"
+            android:orientation="vertical">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小宝宝怎样刷牙才是科学的呢? 需要用哪种牙膏和牙刷呀?"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_505050"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.2"
+                app:font="fzltxihk"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.xiaobukuaipao.youngmam.view.SquaredImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_two_middle_photo1"/>
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@android:color/transparent"/>
+
+                <com.xiaobukuaipao.youngmam.view.SquaredImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_two_middle_photo2"/>
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@android:color/transparent"/>
+
+                <com.xiaobukuaipao.youngmam.view.SquaredImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_two_middle_photo3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

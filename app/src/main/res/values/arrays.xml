@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_name">
+        <item>奶粉</item>
+        <item>婴儿辅食</item>
+        <item>儿童食品</item>
+        <item>纸尿裤</item>
+        <item>童装</item>
+        <item>童鞋</item>
+        <item>药品</item>
+        <item>护肤品</item>
+        <item>日用品</item>
+        <item>玩具</item>
+        <item>童车</item>
+        <item>孕妈用品</item>
+    </string-array>
+</resources>

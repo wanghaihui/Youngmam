@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp">
+
+    <com.xiaobukuaipao.youngmam.view.RoundedImageView
+        xmlns:roundImage="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_item"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        roundImage:riv_border_color="@color/white"
+        roundImage:riv_border_width="1dp"
+        roundImage:riv_corner_radius="10dp"
+        roundImage:riv_mutate_background="true"
+        roundImage:riv_oval="true" />
+
+</RelativeLayout>

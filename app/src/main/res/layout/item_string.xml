@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/str_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@color/label_item_bg"
+        android:textColor="@color/color_505050"
+        android:textSize="@dimen/text_size_16sp"
+        app:font="fzltxihk"/>
+
+</LinearLayout>

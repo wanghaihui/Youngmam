@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_basic_bg">
+
+    <RelativeLayout android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/color_action_bar">
+
+        <FrameLayout android:id="@+id/btn_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/txt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                android:text="@string/str_search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@drawable/btn_participate_bg"
+                app:font="fzltxihk"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                android:text="@string/str_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@drawable/btn_participate_bg"
+                app:font="fzltxihk"/>
+
+        </FrameLayout>
+
+        <com.xiaobukuaipao.youngmam.widget.SearchView1
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_search_cancel"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_14sp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/rectangle_white_radius5_bg"
+            app:font="fzltxihk">
+
+        </com.xiaobukuaipao.youngmam.widget.SearchView1>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout android:id="@+id/latest_hot_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout android:id="@+id/hot_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp">
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/img_indicator"
+                            android:layout_centerVertical="true"/>
+
+                        <com.xiaobukuaipao.youngmam.font.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/str_hot_search"
+                            android:textColor="@color/color_ff4c51"
+                            android:textSize="@dimen/text_size_16sp"
+                            app:font="fzltxihk"/>
+
+                    </LinearLayout>
+
+                    <com.xiaobukuaipao.youngmam.view.NestedGridView
+                        android:id="@+id/tag_grid_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:numColumns="3"
+                        android:horizontalSpacing="5dp"
+                        android:verticalSpacing="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/latest_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/latest_search_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp">
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/img_indicator"
+                            android:layout_centerVertical="true"/>
+
+                        <com.xiaobukuaipao.youngmam.font.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/str_latest_search"
+                            android:textColor="@color/color_ff4c51"
+                            android:textSize="@dimen/text_size_16sp"
+                            app:font="fzltxihk"/>
+
+                    </LinearLayout>
+
+                    <com.xiaobukuaipao.youngmam.view.NestedListView android:id="@+id/latest_search_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dividerHeight="1px"
+                        android:divider="@color/color_e8e8e8"/>
+
+                    <LinearLayout android:id="@+id/clear_search_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View android:id="@+id/divider_dialog"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_e5e5e5" />
+
+                        <com.xiaobukuaipao.youngmam.font.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:gravity="center"
+                            android:text="@string/str_clear_search_history"
+                            android:textColor="@color/color_ff4c51"
+                            android:textSize="@dimen/text_size_16sp"
+                            android:background="@color/label_item_bg"
+                            app:font="fzltxihk"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout android:id="@+id/result_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xiaobukuaipao.youngmam.loadmore.LoadMoreGridViewContainer
+                android:id="@+id/load_more_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.xiaobukuaipao.youngmam.loadmore.GridViewWithHeaderAndFooter android:id="@+id/search_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="2"/>
+
+            </com.xiaobukuaipao.youngmam.loadmore.LoadMoreGridViewContainer>
+
+            <LinearLayout android:id="@+id/no_search_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/baby"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_505050"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:text="@string/str_search_no_data"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/result_search_label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/search_label_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:background="@color/color_basic_bg">
+            </ListView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

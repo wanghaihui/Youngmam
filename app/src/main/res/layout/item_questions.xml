@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/category_item_bg">
+
+    <ImageView android:id="@+id/indicator_new_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="7.5dp"
+        android:src="@mipmap/indicator_new_question"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:id="@+id/txt_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_505050"
+            android:textSize="@dimen/text_size_16sp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            app:font="fzltxihk"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="1分钟前"
+                android:textColor="@color/color_505050"
+                android:textSize="@dimen/text_size_12sp"
+                app:font="fzltxihk"/>
+
+            <LinearLayout android:id="@+id/answer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/count_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="15"
+                    android:textColor="@color/color_ff4c51"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:font="fzltcuhk"/>
+
+                <com.xiaobukuaipao.youngmam.font.FontTextView
+                    android:id="@+id/txt_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_answer"
+                    android:textColor="@color/color_ff4c51"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:font="fzltxihk"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

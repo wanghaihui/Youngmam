@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/member_item_bg">
+
+    <ImageView android:id="@+id/img_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"/>
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_message"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/color_505050"
+        app:font="fzltxihk" />
+
+    <com.xiaobukuaipao.youngmam.font.FontTextView
+        android:id="@+id/count_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="2.5dp"
+        android:paddingBottom="2.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txt_message"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/red_tip_circle"
+        android:visibility="gone"
+        app:font="fzlthk" />
+
+    <ImageView android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_setting_more"/>
+
+</RelativeLayout>

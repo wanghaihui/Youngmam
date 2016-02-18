@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 注册 -->
+    <item name="phone_register" type="id" />
+    <item name="upload_avatar" type="id" />
+    <item name="set_basic_info" type="id" />
+    <item name="set_baby_info" type="id" />
+    <item name="login" type="id" />
+    <item name="reset_pswd" type="id" />
+
+    <!-- 活动 -->
+    <item name="get_current_activity" type="id" />
+    <item name="get_banner_activities" type="id" />
+    <item name="get_activity_article" type="id" />
+
+    <!-- 达人 -->
+    <item name="get_onboard_expert" type="id" />
+
+    <!-- 话题 -->
+    <item name="get_onboard_theme" type="id" />
+
+    <!-- 专题 -->
+    <item name="get_topic_summary" type="id" />
+    <item name="get_topic_list" type="id" />
+    <item name="get_topic" type="id" />
+    <item name="get_all_topic" type="id" />
+
+    <!-- 文章聚合相关 -->
+    <item name="get_editor_choice_tag" type="id" />
+    <item name="get_editor_choice_article" type="id" />
+
+    <!-- 文章相关 -->
+    <item name="get_hot_article" type="id" />
+    <item name="get_all_article" type="id" />
+    <item name="get_article" type="id" />
+    <item name="get_article_like" type="id" />
+    <item name="get_comment" type="id" />
+    <item name="upload_article_path" type="id" />
+    <item name="save_article" type="id" />
+    <item name="delete_like_article" type="id" />
+    <item name="add_like_article" type="id" />
+    <item name="delete_article" type="id" />
+    <item name="delete_question" type="id" />
+    <item name="get_bylike_article" type="id" />
+    <item name="add_article_comment" type="id" />
+    <item name="delete_comment" type="id" />
+    <item name="add_comment" type="id" />
+
+    <!-- 标签 -->
+    <item name="get_hot_tag" type="id" />
+    <item name="get_search_tag" type="id" />
+    <item name="get_recommend_tag" type="id" />
+
+    <!-- Mine -->
+    <item name="get_user_base" type="id" />
+    <item name="get_user_child" type="id" />
+    <item name="get_publish_article" type="id" />
+    <item name="get_user_statis" type="id" />
+    <item name="get_mycomment_article" type="id" />
+    <item name="get_message" type="id" />
+
+    <!-- 推送 -->
+    <item name="set_push_token" type="id" />
+
+    <!-- 未读消息 -->
+    <item name="get_unread_count" type="id" />
+
+    <!-- 得到他人发布的文章列表 -->
+    <item name="get_user_article" type="id" />
+    <item name="get_user_like_article" type="id" />
+
+    <!-- 搜索 -->
+    <item name="get_search_article" type="id" />
+
+    <item name="get_search_article_by_tag" type="id" />
+    <item name="get_search_question_by_tag" type="id" />
+
+    <!-- 小登录 -->
+    <item name="tlogin" type="id" />
+
+    <!-- 获取短信验证码 -->
+    <item name="send_vcode" type="id" />
+
+    <!-- 退出登录 -->
+    <item name="passport_logout" type="id" />
+
+    <!-- 第三方登录 -->
+    <item name="weixin_login" type="id" />
+    <item name="weixin_login2" type="id" />
+    <item name="weibo_login" type="id" />
+    <item name="qq_login" type="id" />
+
+    <!-- Setting -->
+    <item name="add_feedback" type="id" />
+
+    <!-- 正在加载 -->
+    <item name="onLoading" type="id" />
+
+    <!-- 礼品商城 -->
+    <item name="get_all_gift" type="id" />
+    <item name="get_all_credit" type="id" />
+    <item name="get_bonus_detail" type="id" />
+
+    <!-- 话题 -->
+    <item name="get_all_theme" type="id" />
+
+    <!-- 达人 -->
+    <item name="get_all_expert" type="id" />
+
+    <item name="get_hot_tags" type="id" />
+
+    <item name="get_gift_address" type="id" />
+    <item name="set_gift_address" type="id" />
+
+    <item name="get_point_detail" type="id" />
+
+    <item name="get_special_topic" type="id" />
+
+    <item name="exchange_gift" type="id" />
+
+    <item name="get_mine_gift" type="id" />
+
+    <item name="share_article_bonus" type="id" />
+    <item name="share_special_topic_bonus" type="id" />
+    <item name="share_webpage_bonus" type="id" />
+    <item name="share_latest_activity_bonus" type="id" />
+    <item name="share_tag_bonus" type="id" />
+
+    <item name="app_praise_bonus" type="id" />
+
+    <item name="check_in" type="id" />
+
+    <item name="create_question" type="id" />
+
+    <item name="upload_image" type="id" />
+
+    <item name="get_all_questions" type="id" />
+
+    <item name="get_watermark_group" type="id" />
+    <item name="get_sticker_group" type="id" />
+    <item name="get_sticker_by_id" type="id" />
+    <item name="get_watermark_by_id" type="id" />
+
+    <item name="get_new_questions" type="id" />
+    <item name="get_best_questions" type="id" />
+    <item name="get_user_questions" type="id" />
+
+    <item name="get_best_feed" type="id" />
+    <item name="get_recommend_feed" type="id" />
+
+    <item name="add_like" type="id" />
+    <item name="delete_like2" type="id" />
+
+    <item name="get_topic_category" type="id" />
+    <item name="get_topic_by_category" type="id" />
+
+    <item name="add_like_comment" type="id" />
+    <item name="get_recommend_theme" type="id" />
+    <item name="delete_like_comment" type="id" />
+
+    <item name="get_onboard_banner" type="id" />
+    <item name="get_recommend_expert" type="id" />
+
+    <item name="get_friend_feed" type="id" />
+
+    <item name="get_feed_category" type="id" />
+    <item name="get_feed_by_category" type="id" />
+
+    <item name="get_question_by_tagname" type="id" />
+
+    <item name="get_question_detail" type="id" />
+
+    <item name="add_follow" type="id" />
+    <item name="delete_follow" type="id" />
+
+    <item name="get_following" type="id" />
+    <item name="get_followers" type="id" />
+
+    <item name="get_message_by_type" type="id" />
+
+    <item name="read_all_message" type="id" />
+
+    <item name="share_bonus" type="id" />
+
+    <item name="image_tag_position" type="id"></item>
+</resources>

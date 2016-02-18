@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer
+        android:id="@+id/list_load_more_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView android:id="@+id/asked_question_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:background="@color/color_basic_bg"
+            android:scrollbars="none"/>
+
+    </com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer>
+
+    <RelativeLayout android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView android:id="@+id/honey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/honey"
+            android:layout_centerInParent="true"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/honey"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_empty_publish"
+            android:textSize="@dimen/text_size_16sp"
+            app:font="fzltxihk" />
+
+    </RelativeLayout>
+
+</FrameLayout>

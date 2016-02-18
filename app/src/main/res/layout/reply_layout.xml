@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_b7b7b7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/color_d9d9d9">
+
+        <!--
+        <ImageButton android:id="@+id/reply_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".14"
+            android:layout_gravity="bottom"
+            android:src="@drawable/reply_photo"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"/>
+            -->
+
+        <ImageButton android:id="@+id/reply_emoji"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".14"
+            android:layout_gravity="bottom"
+            android:src="@drawable/reply_emoji_large"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/transparent"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontEditText android:id="@+id/reply_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".72"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:background="@drawable/rectangle_white_radius5_bg"
+            android:textCursorDrawable="@drawable/color_cursor"
+
+            android:maxLength="256"
+            android:maxLines="4"
+
+            android:textSize="@dimen/text_size_15sp"
+
+            app:font="fzltxihk"/>
+
+        <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/reply_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".14"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/str_send"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_reply_bg"
+            app:font="fzltxihk"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_b7b7b7"/>
+
+</LinearLayout>

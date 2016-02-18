@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaobukuaipao.youngmam.widget.YoungActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/color_action_bar">
+    </com.xiaobukuaipao.youngmam.widget.YoungActionBar>
+
+    <RelativeLayout android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_participate_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_have_question"/>
+
+            <com.xiaobukuaipao.youngmam.font.FontTextView android:id="@+id/id_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/str_have_a_question"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                app:font="fzltxihk"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.youngmam.widget.YoungRefreshLayout
+        xmlns:refresh="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/bottom_layout"
+        refresh:scrollableChildId="@+id/questions_list_view">
+
+        <com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer
+            android:id="@+id/load_more_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/questions_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:background="@color/color_basic_bg"
+                android:fadingEdge="none"
+                android:scrollbarStyle="outsideOverlay">
+            </ListView>
+
+        </com.xiaobukuaipao.youngmam.loadmore.LoadMoreListViewContainer>
+    </com.xiaobukuaipao.youngmam.widget.YoungRefreshLayout>
+
+
+
+</RelativeLayout>
